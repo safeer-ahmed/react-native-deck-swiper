@@ -88,7 +88,7 @@ class Swiper extends Component {
 
   componentWillUnmount = () => {
     this._mounted = false;
-    InteractionManager.runAfterInteractions(componentWillUnmountAfterInteractions.bind(this));
+    InteractionManager.runAfterInteractions(this.componentWillUnmountAfterInteractions.bind(this));
   }
 
   getCardStyle = () => {
